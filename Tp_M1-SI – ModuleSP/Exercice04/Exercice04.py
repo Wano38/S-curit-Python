@@ -48,10 +48,10 @@ def afficher_reponses():
 
 def main():
     # Clé secrète connue seulement du serveur
-    key = b'Sixteen byte key'
+    key = b'je me dedemande quel est la cle '
 
     # Scénario : un attaquant devine des mots dans un message (comme des rôles : "admin", "user", etc.)
-    message_clair = b"user|admin|secret|guest|admin|user"
+    message_clair = b"cette cle vous permet dacceder a ce message bravo !"
     message_chiffré = chiffrement_ecb_bloc(message_clair, key)
 
     # L’attaquant essaie de retrouver des mots connus
