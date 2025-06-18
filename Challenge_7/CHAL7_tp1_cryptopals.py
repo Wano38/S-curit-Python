@@ -15,7 +15,7 @@ def decrypt_aes_ecb_base64_from_file(filename, key):
 
 def main():
     key = b"YELLOW SUBMARINE"
-    plaintext = decrypt_aes_ecb_base64_from_file("chal7.txt", key)
+    plaintext = decrypt_aes_ecb_base64_from_file("Chal7.txt", key)
     print(plaintext)
 
 
